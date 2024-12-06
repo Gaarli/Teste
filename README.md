@@ -60,7 +60,12 @@ $$
 \Delta \vec{v}_1 = -\frac{m_2}{m_1} \Delta \vec{v}_2
 $$
 
-##
+## Análise da velocidade relativa
+
+Pela conservação da energia cinética na colisão, tem-se que o vetor da velocidade
+relativa $\vec{v}_r = \vec{v}_1 - \vec{v}_2 $ apenas inverte seu sinal após a colisão
+
+
 
 $$ 
 m_1 (\vec{v}_1 - \vec{v}_1') = m_2 (\vec{v}_2' - \vec{v}_2)
