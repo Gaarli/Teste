@@ -11,7 +11,7 @@ $$
 Portanto a variação do momento linear desse corpo pode ser expressa como:
 
 $$
-\Delta \vec{p} = \vec{p}_f - \vec{p}_i = \vec{v}_f
+\Delta \vec{p} = \vec{p}_f - \vec{p}_i = m \vec{v}_f - m \vec{v}_i = m \Delta \vec{v}
 $$
 
 
