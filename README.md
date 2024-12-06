@@ -91,7 +91,7 @@ $$
 \Delta \vec{v}_1 \cdot \vec{n} \left(1 + \frac{m_1}{m_2}\right) = -2 (\vec{v}_1 - \vec{v}_2) \cdot \vec{n}
 $$
 
-## Resolver \Delta \vec{v}_1
+## Resolver $\Delta \vec{v}_1$
 
 Sabendo-se que
 
@@ -104,6 +104,9 @@ Temos
 $$
 \Delta \vec{v}_2 = -\frac{m_2}{m_1} \Delta \vec{v}_1
 $$
+
+Substituindo na equação encontrada pela velocidade relativa
+
 
 $$  
 m_1 (\vec{v}_1 - \vec{v}_1') = m_2 (\vec{v}_2' - \vec{v}_2)
