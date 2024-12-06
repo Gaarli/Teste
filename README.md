@@ -13,7 +13,7 @@ Portanto a variação do momento linear desse corpo pode ser expressa como:
 $$
 \Delta \vec{p} = \vec{p}_f - \vec{p}_i = m \vec{v}_f - m \vec{v}_i = m \Delta \vec{v}
 $$
-## **1. Segunda Lei de Newton**
+## 
 A segunda lei de Newton diz que:
 
 $$
@@ -124,52 +124,82 @@ Sabemos que $p = m \cdot v$, então:
      - `v1i` e `v2i` são as velocidades iniciais dos corpos.
      - `v1f` e `v2f` são as velocidades finais dos corpos.
 
-- **Aplicabilidade:**
+\section*{Dedução da Fórmula para $\vec{v}_1'$ com $\vec{n} = \vec{x}_1 - \vec{x}_2$}
 
-  O jogo simula como corpos de diferentes massas e velocidades reagem a colisões elásticas entre si, levando em consideração as leis da física mencionadas. No código implementado, as colisões são tratadas de forma a conservar tanto o momento linear quanto a energia cinética dos corpos, aplicando as fórmulas mencionadas para calcular as novas velocidades após cada colisão. Como forças externas como atrito, resistência do ar e gravidade não são consideradas, a simulação é uma idealização simplificada das colisões, sendo útil para a visualização de interações entre corpos em um sistema fechado e para a compreensão básica da física de colisões elásticas.
+\subsection*{1. Conservação do Momento Linear}
+\[
+m_1 \vec{v}_1 + m_2 \vec{v}_2 = m_1 \vec{v}_1' + m_2 \vec{v}_2'.
+\]
+Reorganizando:
+\[
+m_1 (\vec{v}_1 - \vec{v}_1') = m_2 (\vec{v}_2' - \vec{v}_2). \tag{1}
+\]
 
-  ## Implementação
+\subsection*{2. Conservação da Energia Cinética}
+\[
+\frac{1}{2} m_1 |\vec{v}_1|^2 + \frac{1}{2} m_2 |\vec{v}_2|^2 = \frac{1}{2} m_1 |\vec{v}_1'|^2 + \frac{1}{2} m_2 |\vec{v}_2'|^2.
+\]
+Cancelando o fator $\frac{1}{2}$:
+\[
+m_1 (|\vec{v}_1|^2 - |\vec{v}_1'|^2) = m_2 (|\vec{v}_2'|^2 - |\vec{v}_2|^2). \tag{2}
+\]
 
-  - **Linguagens e Pacotes:**  
-  O projeto foi implementado em Python utilizando os pacotes pygame, sys, random e math. Cada um desses pacotes oferece ferramentas específicas para lidar com visualização, computação científica, interações físicas,         aleatoriedade, permitindo que a simulação seja interativa e visualmente intuitiva.
-  
-## Como Usar
-- **Instalação e Dependências:**  
-  -Certifique-se de que o Python 3.6+ (ou outra versão de linguagem) está instalado.
-  -Dependências incluem: Math, PyGame, Random.
-  -Instale os pacotes necessários executando:
-  
-  ```
-  pip install (coloque a qui o nome da biblioteca que lhe falta)
-  ```
+\subsection*{3. Vetor Direção da Colisão}
+Definimos $\vec{n} = \vec{x}_1 - \vec{x}_2$ como o vetor de referência. A colisão altera apenas as componentes ao longo de $\vec{n}$. Assim, as velocidades após a colisão são:
+\[
+\vec{v}_1' = \vec{v}_1 + \Delta \vec{v}_1, \quad \vec{v}_2' = \vec{v}_2 + \Delta \vec{v}_2.
+\]
 
-- **Exemplos de Uso:** 
-  -Para rodar a simulação básica, utilize o código:
-  simuladordecolisoes.py e execute o terminal.
+\subsection*{4. Relacionando as Alterações}
+Usando a Eq. (1), temos:
+\[
+m_1 \Delta \vec{v}_1 + m_2 \Delta \vec{v}_2 = 0. \tag{3}
+\]
+Logo:
+\[
+\Delta \vec{v}_1 = -\frac{m_2}{m_1} \Delta \vec{v}_2. \tag{4}
+\]
 
-- **Informações sobre o projeto:**
-  Este projeto foi desenvolvido por:
-  
-    Matheus Araujo Pinheiro (14676810): matheusaraujopinh@usp.br
-  
-    Bruno Gonçalves (14762111): brunogb728@usp.br
+\subsection*{5. Velocidades Relativas}
+A velocidade relativa ao longo de $\vec{n}$ inverte após a colisão:
+\[
+(\vec{v}_1' - \vec{v}_2') \cdot \vec{n} = -(\vec{v}_1 - \vec{v}_2) \cdot \vec{n}. \tag{5}
+\]
+Substituímos $\vec{v}_1'$ e $\vec{v}_2'$:
+\[
+((\vec{v}_1 + \Delta \vec{v}_1) - (\vec{v}_2 + \Delta \vec{v}_2)) \cdot \vec{n} = -(\vec{v}_1 - \vec{v}_2) \cdot \vec{n}.
+\]
+Reorganizando:
+\[
+(\Delta \vec{v}_1 - \Delta \vec{v}_2) \cdot \vec{n} = -2 (\vec{v}_1 - \vec{v}_2) \cdot \vec{n}. \tag{6}
+\]
 
-    Luis Henrique Ponciano (15577760): luishenriqueponciano@usp.br
+\subsection*{6. Substituindo $\Delta \vec{v}_2$}
+Usamos a Eq. (4):
+\[
+\Delta \vec{v}_1 \cdot \vec{n} - \left(-\frac{m_1}{m_2} \Delta \vec{v}_1\right) \cdot \vec{n} = -2 (\vec{v}_1 - \vec{v}_2) \cdot \vec{n}.
+\]
+Simplificando:
+\[
+\Delta \vec{v}_1 \cdot \vec{n} \left(1 + \frac{m_1}{m_2}\right) = -2 (\vec{v}_1 - \vec{v}_2) \cdot \vec{n}.
+\]
+Logo:
+\[
+\Delta \vec{v}_1 \cdot \vec{n} = -\frac{2m_2}{m_1 + m_2} (\vec{v}_1 - \vec{v}_2) \cdot \vec{n}. \tag{7}
+\]
 
-    Gabriel Araujo Lima (14571376): gabriel.araujolima@usp.br
+\subsection*{7. Projeção Vetorial para $\Delta \vec{v}_1$}
+A projeção vetorial ao longo de $\vec{n}$ é:
+\[
+\Delta \vec{v}_1 = -\frac{2m_2}{m_1 + m_2} \frac{\text{proj}_{\vec{n}} (\vec{v}_1 - \vec{v}_2)}{|\vec{n}|^2}.
+\]
 
-Como parte do processo avaliativo da disciplina 7600105 - Física Básica I (2024) da USP-São Carlos ministrada pela(o) [Prof. Krissia de Zawadzki/Esmerindo de Sousa Bernardes]
+Substituímos em $\vec{v}_1'$:
+\[
+\vec{v}_1' = \vec{v}_1 + \Delta \vec{v}_1.
+\]
 
-### REFERENCIAS
-- Utilizamos o Material didático disponibilizado no edisciplinas: dinamica-v4.pdf
-- Utilizamos o Chatgpt para nos auxiliar na parte gráfica do código, como a função gerar_cor e draw (pela falta de familiaridade com essa parte do código)
-- Utilizamos o site:
-  ```
-  https://www.pygame.org/docs/
-  ```
-  Para consultarmos e identificarmos as funções disponibilizadas pela biblioteca pygame
-- Utilizamos o site:
-  ```
-  https://docs.python.org/3
-  ```
-  Para consultarmos outras funções disponibilizadas nas linguagens e biliotecas que utilizamos de suporte
+\subsection*{8. Fórmula Final}
+\[
+\vec{v}_1' = \vec{v}_1 - \frac{2m_2}{m_1 + m_2} \frac{(\vec{v}_1 - \vec{v}_2) \cdot \vec{n}}{|\vec{n}|^2} \vec{n}.
+\]
