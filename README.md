@@ -1,3 +1,9 @@
+##
+   Onde:
+     - `m1` e `m2` são as massas dos corpos.
+     - `v1i` e `v2i` são as velocidades iniciais dos corpos.
+     - `v1f` e `v2f` são as velocidades finais dos corpos.
+
 # Modelo Matemático
 
 ## Ideia inicial
@@ -40,11 +46,9 @@ $$
 \vec{v}'_1 = \vec{v}_1 + \Delta v_1, \quad \vec{v}_2' = \vec{v}_2 + \Delta \vec{v}_2
 $$
 
-##
-   Onde:
-     - `m1` e `m2` são as massas dos corpos.
-     - `v1i` e `v2i` são as velocidades iniciais dos corpos.
-     - `v1f` e `v2f` são as velocidades finais dos corpos.
+## Relacionar as mudanças das velocidades
+
+Reescrevendo a equação do momento linear conservado pela variação das velocidades, temos:
 
 $$ 
 m_1 (\vec{v}_1 - \vec{v}_1') = m_2 (\vec{v}_2' - \vec{v}_2)
