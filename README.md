@@ -138,14 +138,11 @@ $$
 $$
 
 Pela definição de projeção vetorial
+![image](https://github.com/user-attachments/assets/be553e23-7864-43d9-b54e-2b0191cd590e)
 
-$$
-\operatorname{proj}_{2}
-$$
 
-$$
-\Delta \vec{v}_1 = -\frac{2m_2}{m_1 + m_2} proj \vec{n} (\vec{v}_1 - \vec{v}_2)
-$$
+
+
 
 $$  
 m_1 (\vec{v}_1 - \vec{v}_1') = m_2 (\vec{v}_2' - \vec{v}_2)
