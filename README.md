@@ -140,7 +140,7 @@ $$
 Pela definição de projeção vetorial
 
 $$
-\Delta \vec{v}_1 = -\frac{2m_2}{m_1 + m_2} \frac{(\vec{v}_1 - \vec{v}_2) \cdot \vec{n}}{\left\|\vec{n}\right\|^2} \cdot \vec{n}
+\Delta \vec{v}_1 = -\frac{2m_2}{m_1 + m_2} \operatorname{proj}_{\vec{n}} (\vec{v}_1 - \vec{v}_2)
 $$
 
 $$  
