@@ -139,24 +139,25 @@ $$
 
 Desenvolvendo o $\Delta \vec{v}_1$, temos:
 
-
-
-$$  
-m_1 (\vec{v}_1 - \vec{v}_1') = m_2 (\vec{v}_2' - \vec{v}_2)
-$$
-
-$$
-m_1 (|\vec{v}_1|^2 - |\vec{v}_1'|^2) = m_2 (|\vec{v}_2'|^2 - |\vec{v}_2|^2)
-$$
-
-$$
-(\vec{v}_1' - \vec{v}_2') \cdot \vec{n} = -(\vec{v}_1 - \vec{v}_2) \cdot \vec{n}
-$$
-
-$$
-\Delta \vec{v}_1 = -\frac{2m_2}{m_1 + m_2} \frac{(\vec{v}_1 - \vec{v}_2) \cdot \vec{n}}{|\vec{n}|^2} \vec{n}
-$$
-
 $$
 \vec{v}_1' = \vec{v}_1 - \frac{2m_2}{m_1 + m_2} \frac{(\vec{v}_1 - \vec{v}_2) \cdot \vec{n}}{|\vec{n}|^2} \vec{n}
 $$
+
+Observação: pode-se simplificar pela definição de projeção vetorial
+
+## Cálculo de $\vec{v}_2'$
+
+De maneira análoga ao processo exibido, obtém-se $\vec{v}_2'$ como:
+
+$$
+\vec{v}_2' = \vec{v}_2 - \frac{2m_1}{m_1 + m_2} \frac{(\vec{v}_1 - \vec{v}_2) \cdot \vec{n}}{|\vec{n}|^2} \vec{n}
+$$
+
+## Implementação dessa trajetória no código
+
+A mudança da velocidade pode ser implementada como:
+
+v1_new = v1 - (2 * m2 / (m1 + m2)) * pygame.math.Vector2.project((v1 - v2), (x1 - x2))
+
+
+## Alteração da trajetória
