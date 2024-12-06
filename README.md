@@ -171,19 +171,25 @@ A alteração da trajetória segue uma relação simples de soma, onde as coorde
 são alteradas a cada unidade de tempo medida. Ao decorrer do tempo, as velocidades
 serão somadas com suas respectivas velocidades na componente analisadas
 
-Dessa forma, temos:
+Dessa forma, temos a posição dada por:
 
 $$
 \gamma (t) = (x(t), y(t))
 $$
 
+Por sua vez, a velocidade é dada em componentes:
+
 $$
 \vec{v} (t) = (v_x (t), v_y (t))
 $$
 
+A atualização da posição pode ser expressa por:
+
 $$
 \gamma (t+dt) = (x(t+dt), y(t+dt))
 $$
+
+Onde:
 
 $$
 x(t+dt) = x(t) + v'_1x 
@@ -192,3 +198,17 @@ $$
 $$
 x(t+dt) = x(t) + v'_1y 
 $$
+
+## Implementação
+
+A trajetória é atualizada com a seguinte linha de código
+
+```
+self.pos = self.pos + self.v
+```
+Onde
+```
+self: estrutura que armazena a posição
+pos: posição atual
+v: velocidade do objeto
+```
