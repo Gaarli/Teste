@@ -169,7 +169,7 @@ $$
 Retornando para o vetor do centro de massa:
 
 $$
-\vec{v}_1' = \vec{v}_1 - \frac{2m_2}{m_1 + m_2} \frac{(\vec{v}_1 - \vec{v}_2) \cdot \vec{x}_1-\vec{x}_2}}{|\vec{x}_1-\vec{x}_2|^2} \vec{x}_1-\vec{x}_2
+\vec{v}_1' = \vec{v}_1 - \frac{2m_2}{m_1 + m_2} \frac{(\vec{v}_1 - \vec{v}_2) \cdot \vec{x}_1-\vec{x}_2}{|\vec{x}_1-\vec{x}_2|^2} \vec{x}_1-\vec{x}_2
 $$
 
 Observação: pode-se simplificar pela definição de projeção vetorial
