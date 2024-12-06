@@ -124,6 +124,7 @@ Sabemos que $p = m \cdot v$, então:
      - `v1i` e `v2i` são as velocidades iniciais dos corpos.
      - `v1f` e `v2f` são as velocidades finais dos corpos.
 
+$$
 \section*{Dedução da Fórmula para $\vec{v}_1'$ com $\vec{n} = \vec{x}_1 - \vec{x}_2$}
 
 \subsection*{1. Conservação do Momento Linear}
@@ -203,3 +204,5 @@ Substituímos em $\vec{v}_1'$:
 \[
 \vec{v}_1' = \vec{v}_1 - \frac{2m_2}{m_1 + m_2} \frac{(\vec{v}_1 - \vec{v}_2) \cdot \vec{n}}{|\vec{n}|^2} \vec{n}.
 \]
+
+$$
