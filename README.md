@@ -26,8 +26,8 @@ $$
 
 ## Definição da linha de colisão e das variações das velocidades
 
-Para analisar a colisão, será utilizado um vetor auxiliar $$ \vec{n} $$ onde iremos decompor o
-momento linear de cada corpo nesse vetor e o seu respectivo perpendicular. O vetor $$ \vec{n} $$
+Para analisar a colisão, será utilizado um vetor auxiliar $ \vec{n} $ onde iremos decompor o
+momento linear de cada corpo nesse vetor e o seu respectivo perpendicular. O vetor $ \vec{n} $
 conecta os dois centros de massa dos projéteis. Dessa forma,
 
 $$
@@ -37,7 +37,7 @@ $$
 Por sua vez, a variação das velocidades pode ser escrita como:
 
 $$
-v_1' = v_1 + \Delta v_1, \quad v_2' = v_2 + \Delta v_2
+\vec{v}'_1 = \vec{v}_1 + \Delta v_1, \quad \vec{v}_2' = \vec{v}_2 + \Delta \vec{v}_2
 $$
 
 ##
