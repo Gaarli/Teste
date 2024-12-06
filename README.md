@@ -130,7 +130,7 @@ $$
 $$
 
 $$
-\Delta \vec{v}_1 \cdot  \left\|\vec{n}\right\| = (-\frac{2m_2}{m_1 + m_2} (\vec{v}_1 - \vec{v}_2) \cdot \vec{n}) \cdot \vec{n}
+\Delta \vec{v}_1 \cdot  \left\||\vec{n}\right\|| = (-\frac{2m_2}{m_1 + m_2} (\vec{v}_1 - \vec{v}_2) \cdot \vec{n}) \cdot \vec{n}
 $$
 
 
