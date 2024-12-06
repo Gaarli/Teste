@@ -157,7 +157,38 @@ $$
 
 A mudança da velocidade pode ser implementada como:
 
+```
 v1_new = v1 - (2 * m2 / (m1 + m2)) * pygame.math.Vector2.project((v1 - v2), (x1 - x2))
+```
 
+```
+v2_new = v2 - (2 * m1 / (m1 + m2)) * pygame.math.Vector2.project((v2 - v1), (x2 - x1))
+```
 
 ## Alteração da trajetória
+
+A alteração da trajetória segue uma relação simples de soma, onde as coordenadas
+são alteradas a cada unidade de tempo medida. Ao decorrer do tempo, as velocidades
+serão somadas com suas respectivas velocidades na componente analisadas
+
+Dessa forma, temos:
+
+$$
+\gamma (t) = (x(t), y(t))
+$$
+
+$$
+\vec{v} (t) = (v_x (t), v_y (t))
+$$
+
+$$
+\gamma (t+dt) = (x(t+dt), y(t+dt))
+$$
+
+$$
+x(t+dt) = x(t) + v'_1x 
+$$
+
+$$
+x(t+dt) = x(t) + v'_1y 
+$$
