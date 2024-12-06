@@ -44,9 +44,11 @@ $$
 $$
 
 Portanto a variação do momento linear desse corpo pode ser expressa como:
+
 $$
-\Delta \vec{p} = \vec{p}_f - \vec{p}_i = m \vec{v_{1}} - m \vec{v_{0}} = m \Delta \vec{v}
+ \Delta \vec{p} = \vec{p}_f - \vec{p}_i = m \vec{v_{1}} - m \vec{v_{0}} = m \Delta \vec{v}
 $$
+
 ## **1. Segunda Lei de Newton**
 A segunda lei de Newton diz que:
 
