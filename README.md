@@ -1,5 +1,8 @@
 # Modelo Matemático
 
+## Ideia inicial
+
+Utiliza-se a conservação da conservação de momento linear e da energia cinética para encontrar encontrar a trajetória dos corpos após a colisão
 ## Momento Linear
 
 O momento linear de um corpo de massa constante $$m$$ é dado por
@@ -13,120 +16,35 @@ Portanto a variação do momento linear desse corpo pode ser expressa como:
 $$
 \Delta \vec{p} = \vec{p}_f - \vec{p}_i = m \vec{v}_f - m \vec{v}_i = m \Delta \vec{v}
 $$
-## 
-A segunda lei de Newton diz que:
+## Conservação do momento linear
 
-$$
-F = \frac{\Delta p}{\Delta t},
-$$
-
-onde $F$ é a força, $p = m \cdot v$ é o momento linear, e $\Delta p$ é a variação do momento em um intervalo de tempo $\Delta t$. 
-
-Para dois corpos interagindo, temos:
-
-$$
-F_1 = \frac{\Delta p_1}{\Delta t} \quad \text{e} \quad F_2 = \frac{\Delta p_2}{\Delta t}.
-$$
-
----
-
-## **2. Terceira Lei de Newton**
-A terceira lei de Newton afirma que as forças trocadas entre dois corpos são **iguais em módulo e opostas em direção**:
-
-$$
-F_1 = -F_2.
-$$
-
-Substituímos na equação da força:
-
-$$
-\frac{\Delta p_1}{\Delta t} = -\frac{\Delta p_2}{\Delta t}.
-$$
-
-Multiplicando ambos os lados por $\Delta t$, obtemos:
-
-$$
-\Delta p_1 = -\Delta p_2.
-$$
-
-Ou seja:
-
-$$
-\Delta p_1 + \Delta p_2 = 0.
-$$
-
----
-
-## **3. Definição de Variação do Momento**
-A variação do momento para cada corpo é:
-
-$$
-\Delta p_1 = p_{1f} - p_{1i}, \quad \Delta p_2 = p_{2f} - p_{2i}.
-$$
-
-Substituímos na equação anterior:
-
-$$
-(p_{1f} - p_{1i}) + (p_{2f} - p_{2i}) = 0.
-$$
-
-Reorganizando:
-
-$$
-p_{1i} + p_{2i} = p_{1f} + p_{2f}.
-$$
-
----
-
-## **4. Momento Linear em Função de Massa e Velocidade**
-Sabemos que $p = m \cdot v$, então:
-
-  1. **Conservação do Momento Linear**:
-
-     O momento linear total do sistema (no eixo x e y) é conservado durante a colisão. A fórmula para a conservação do momento linear é dada por:
-
-     ```
-     m1 * v1i + m2 * v2i = m1 * v1f + m2 * v2f
-     ```
-
-     Onde:
-     - `m1` e `m2` são as massas dos corpos 1 e 2, respectivamente.
-     - `v1i` e `v2i` são as velocidades iniciais dos corpos 1 e 2, respectivamente.
-     - `v1f` e `v2f` são as velocidades finais dos corpos 1 e 2, respectivamente.
-
-  2. **Conservação da Energia Cinética**:
-
-     A energia cinética total do sistema também é conservada durante a colisão elástica, e a fórmula para a conservação da energia cinética é:
-
-     ```
-     (1/2) * m1 * v1i^2 + (1/2) * m2 * v2i^2 = (1/2) * m1 * v1f^2 + (1/2) * m2 * v2f^2
-     ```
-
-     Onde:
-     - `m1` e `m2` são as massas dos corpos.
-     - `v1i` e `v2i` são as velocidades iniciais dos corpos.
-     - `v1f` e `v2f` são as velocidades finais dos corpos.
-
-  3. **Cálculo das Velocidades Finais**:
-
-     Em uma colisão elástica entre dois corpos, as velocidades finais dos corpos podem ser calculadas usando as fórmulas específicas que derivam da conservação do momento linear e da energia cinética:
-
-     ```
-     v1f = [(m1 - m2) * v1i + 2 * m2 * v2i] / (m1 + m2)
-     ```
-
-     ```
-     v2f = [(m2 - m1) * v2i + 2 * m1 * v1i] / (m1 + m2)
-     ```
-
-     Onde:
-     - `m1` e `m2` são as massas dos corpos.
-     - `v1i` e `v2i` são as velocidades iniciais dos corpos.
-     - `v1f` e `v2f` são as velocidades finais dos corpos.
+Pela conservação do momento linear para a colisão elástica, temos que:
 
 $$
 m_1 \vec{v}_1 + m_2 \vec{v}_2 = m_1 \vec{v}_1' + m_2 \vec{v}_2'
 $$
+
+## Definição da linha de colisão e das variações das velocidades
+
+Para analisar a colisão, será utilizado um vetor auxiliar $$ \vec{n} $$ onde iremos decompor o
+momento linear de cada corpo nesse vetor e o seu respectivo perpendicular. O vetor $$ \vec{n} $$
+conecta os dois centros de massa dos projéteis. Dessa forma,
+
+$$
+\vec{n} = \vec{x}_1 - \vec{x}_2
+$$
+
+Por sua vez, a variação das velocidades pode ser escrita como:
+
+$$
+v_1' = v_1 + \Delta v_1, \quad v_2' = v_2 + \Delta v_2
+$$
+
+##
+   Onde:
+     - `m1` e `m2` são as massas dos corpos.
+     - `v1i` e `v2i` são as velocidades iniciais dos corpos.
+     - `v1f` e `v2f` são as velocidades finais dos corpos.
 
 $$ 
 m_1 (\vec{v}_1 - \vec{v}_1') = m_2 (\vec{v}_2' - \vec{v}_2)
