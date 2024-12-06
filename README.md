@@ -80,6 +80,7 @@ Observa-se que
 $$
 \vec{v}_1' = \vec{v}_1 + \Delta \vec{v}_1, \quad \vec{v}_2' = \vec{v}_2 + \Delta \vec{v}_2
 $$
+
 Substituindo, temos
 
 $$
