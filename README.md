@@ -84,7 +84,7 @@ $$
 Substituindo, temos
 
 $$
-((v_1 + \Delta v_1) - (v_2 + \Delta v_2)) \cdot n = -(v_1 - v_2) \cdot n.
+((\vec{v}_1 + \Delta \vec{v}_1) - (\vec{v}_2 + \Delta \vec{v}_2)) \cdot \vec{n} = -(\vec{v}_1 - \vec{v}_2) \cdot \vec{n}.
 $$
 
 
