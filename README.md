@@ -50,6 +50,16 @@ $$
 
 Reescrevendo a equação do momento linear conservado pela variação das velocidades, temos:
 
+$$
+m_1 \Delta \vec{v}_1 + m_2 \Delta \vec{v}_2 = 0
+$$
+
+Assim,
+
+$$
+\Delta \vec{v}_1 = -\frac{m_2}{m_1} \Delta \vec{v}_2
+$$
+
 $$ 
 m_1 (\vec{v}_1 - \vec{v}_1') = m_2 (\vec{v}_2' - \vec{v}_2)
 $$
@@ -68,14 +78,6 @@ $$
 
 $$
 (\Delta \vec{v}_1 - \Delta \vec{v}_2) \cdot \vec{n} = -2 (\vec{v}_1 - \vec{v}_2) \cdot \vec{n}
-$$
-
-$$
-m_1 \Delta \vec{v}_1 + m_2 \Delta \vec{v}_2 = 0
-$$
-
-$$
-\Delta \vec{v}_1 = -\frac{m_2}{m_1} \Delta \vec{v}_2
 $$
 
 $$
