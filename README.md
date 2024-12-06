@@ -63,8 +63,28 @@ $$
 ## Análise da velocidade relativa
 
 Pela conservação da energia cinética na colisão, tem-se que o vetor da velocidade
-relativa $\vec{v}_r = \vec{v}_1 - \vec{v}_2 $ apenas inverte seu sinal após a colisão
+relativa $\vec{v}_r = \vec{v}_1 - \vec{v}_2$ apenas inverte seu sinal após a colisão:
 
+$$
+(\vec{v}_1' - \vec{v}_2') = -(\vec{v}_1 - \vec{v}_2)
+$$
+
+Como estamos analisando na componente $\vec{n}$ que conecta os centros de massa:
+
+$$
+(\vec{v}_1' - \vec{v}_2') \cdot \vec{n} = -(\vec{v}_1 - \vec{v}_2) \cdot \vec{n}
+$$
+
+Observa-se que 
+
+$$
+\vec{v}_1' = \vec{v}_1 + \Delta \vec{v}_1, \quad \vec{v}_2' = \vec{v}_2 + \Delta \vec{v}_2
+$$
+Substituindo, temos
+
+$$
+((v_1 + \Delta v_1) - (v_2 + \Delta v_2)) \cdot n = -(v_1 - v_2) \cdot n.
+$$
 
 
 $$ 
@@ -73,10 +93,6 @@ $$
 
 $$
 m_1 (|\vec{v}_1|^2 - |\vec{v}_1'|^2) = m_2 (|\vec{v}_2'|^2 - |\vec{v}_2|^2)
-$$
-
-$$
-\vec{v}_1' = \vec{v}_1 + \Delta \vec{v}_1, \quad \vec{v}_2' = \vec{v}_2 + \Delta \vec{v}_2
 $$
 
 $$
