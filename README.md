@@ -120,9 +120,18 @@ $$
 Assim, 
 
 $$
-\Delta \vec{v}_1 \cdot \vec{n} = -\frac{2m_2}{m_1 + m_2} (\vec{v}_1 - \vec{v}_2) \cdot \vec{n}.
+\Delta \vec{v}_1 \cdot \vec{n} = -\frac{2m_2}{m_1 + m_2} (\vec{v}_1 - \vec{v}_2) \cdot \vec{n}
 $$
 
+Pela igualdade, fazemos produto escalar novamente para podermos isolar $\vec{v}_1$
+
+$$
+(\Delta \vec{v}_1 \cdot \vec{n}) \cdot \vec{n} = (-\frac{2m_2}{m_1 + m_2} (\vec{v}_1 - \vec{v}_2) \cdot \vec{n}) \cdot \vec{n}
+$$
+
+$$
+\Delta \vec{v}_1 \cdot || \vec{n} || = (-\frac{2m_2}{m_1 + m_2} (\vec{v}_1 - \vec{v}_2) \cdot \vec{n}) \cdot \vec{n}
+$$
 
 
 $$  
