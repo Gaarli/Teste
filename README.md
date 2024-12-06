@@ -126,7 +126,7 @@ Sabemos que $p = m \cdot v$, então:
 
 $$
 m_1 \vec{v}_1 + m_2 \vec{v}_2 = m_1 \vec{v}_1' + m_2 \vec{v}_2'
-
+$$
 
 
 m_1 (\vec{v}_1 - \vec{v}_1') = m_2 (\vec{v}_2' - \vec{v}_2)
