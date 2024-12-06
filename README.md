@@ -140,7 +140,7 @@ $$
 Pela definição de projeção vetorial
 
 $$
-\operatorname{proj}
+\operatorname{proj}_{2}
 $$
 
 $$
