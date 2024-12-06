@@ -107,6 +107,23 @@ $$
 
 Substituindo na equação encontrada pela velocidade relativa
 
+$$
+\Delta \vec{v}_1 \cdot \vec{n} - \left( -\frac{m_1}{m_2} \Delta \vec{v}_1 \right) \cdot \vec{n} = -2 (\vec{v}_1 - \vec{v}_2) \cdot \vec{n}.
+$$
+
+Simplificando,
+
+$$
+\Delta \vec{v}_1 \cdot \vec{n} \left( 1 + \frac{m_1}{m_2} \right) = -2 (\vec{v}_1 - \vec{v}_2) \cdot \vec{n}.
+$$
+
+Assim, 
+
+$$
+\Delta \vec{v}_1 \cdot \vec{n} = -\frac{2m_2}{m_1 + m_2} (\vec{v}_1 - \vec{v}_2) \cdot \vec{n}.
+$$
+
+
 
 $$  
 m_1 (\vec{v}_1 - \vec{v}_1') = m_2 (\vec{v}_2' - \vec{v}_2)
