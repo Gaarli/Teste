@@ -60,6 +60,8 @@ $$
 \Delta \vec{v}_1 = -\frac{m_2}{m_1} \Delta \vec{v}_2
 $$
 
+##
+
 $$ 
 m_1 (\vec{v}_1 - \vec{v}_1') = m_2 (\vec{v}_2' - \vec{v}_2)
 $$
