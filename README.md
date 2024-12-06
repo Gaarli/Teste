@@ -37,7 +37,12 @@
 
 ## Momento Linear
 
-O momento linear de um corpo de massa constante $$m$$ é
+O momento linear de um corpo de massa constante $$m$$ é dado por
+
+$$
+\vec{p} = m \vec{v}
+$$
+
 ## **1. Segunda Lei de Newton**
 A segunda lei de Newton diz que:
 
