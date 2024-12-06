@@ -1,8 +1,31 @@
-##
-   Onde:
-     - `m1` e `m2` são as massas dos corpos.
-     - `v1i` e `v2i` são as velocidades iniciais dos corpos.
-     - `v1f` e `v2f` são as velocidades finais dos corpos.
+# Simulação de Colisão Elástica
+
+## Descrição do Projeto
+
+- **Objetivo e Tipo de Projeto**:
+  Criamos um jogo simulação bidimensional onde é possivel visualizar corpos, representados por bolas, se colidindo de forma elástica,
+  onde a energia cinética e o momento linear total do sistema se conservam e os corpos envolvidos não sofrem deformações permanentes 
+  durante o impacto. Ou seja, após o encontro entre os corpos, a direção, o sentido e o módulo da velocidade é afetado, porém a massa não se altera.
+  OBSERVAÇÃO: A parede, ou seja, as bordas da tela, não são consideradas para a colisão e servem apenas para redirecionar o vetor do corpo
+  - Manual de Instruções para o Jogo:
+    Após executar o código, será aberto uma janela pygame onde o usuário se deparará com um menu contendo 3 opções:
+
+    <img src="images/Imagem do WhatsApp de 2024-12-02 à(s) 20.50.02_1f62514c.jpg" alt="Imagem do menu inicial descrito abaixo">
+
+    - Iniciar:
+    Inicia o jogo pressionando a tecla enter, caso o usuário não mexa em nenhuma configuração, o jogo iniciará com o número
+    de corpos e suas respectivas massas e velocidades geradas aleatoriamente.
+    <img src="images/Imagem do WhatsApp de 2024-12-02 à(s) 20.50.02_8e1bc18d.jpg" alt="Imagem do jogo rodando">
+    - Configurar:
+    Abre o menu de configurações pressionando a tecla C. navegando por ele através das teclas direcionais (arrow keys) é possivel:
+    determinar o intervalo de massa mínima (1) e máxima (2) dos corpos no jogo; Determinar o intervalo de velocidade mínima (3) e máxima (4) dos corpos, e o número de corpos (5). 
+    <img src="images/Imagem do WhatsApp de 2024-12-02 à(s) 20.50.02_905e278a.jpg" alt="Imagem do menu de configurações">
+    Pressionando ESC, o usuário retorna ao menu inicial.
+    - Sair:
+    pressiona a tecla ESC para fechar o programa.
+    - OBSERVAÇÃO:
+    Conforme o usuário expande e contrai a janela do jogo, as paredes que fecham a área do jogo seguem o padrão e adaptam seu comprimento. 
+    <img src="images/Imagem do WhatsApp de 2024-12-02 à(s) 20.50.00_3bb2d3ea.jpg" alt="Imagem do jogo com uma janela longa na horizontal e pequena na vertical">
 
 # Modelo Matemático
 
@@ -212,3 +235,52 @@ self: estrutura que armazena a posição
 pos: posição atual
 v: velocidade do objeto
 ```
+
+- **Aplicabilidade:**
+
+  O jogo simula como corpos de diferentes massas e velocidades reagem a colisões elásticas entre si, levando em consideração as leis da física mencionadas. No código implementado, as colisões são tratadas de forma a conservar tanto o momento linear quanto a energia cinética dos corpos, aplicando as fórmulas mencionadas para calcular as novas velocidades após cada colisão. Como forças externas como atrito, resistência do ar e gravidade não são consideradas, a simulação é uma idealização simplificada das colisões, sendo útil para a visualização de interações entre corpos em um sistema fechado e para a compreensão básica da física de colisões elásticas.
+
+  ## Implementação
+
+  - **Linguagens e Pacotes:**  
+  O projeto foi implementado em Python utilizando os pacotes pygame, sys, random e math. Cada um desses pacotes oferece ferramentas específicas para lidar com visualização, computação científica, interações físicas,         aleatoriedade, permitindo que a simulação seja interativa e visualmente intuitiva.
+  
+## Como Usar
+- **Instalação e Dependências:**  
+  -Certifique-se de que o Python 3.6+ (ou outra versão de linguagem) está instalado.
+  -Dependências incluem: Math, PyGame, Random.
+  -Instale os pacotes necessários executando:
+  
+  ```
+  pip install (coloque a qui o nome da biblioteca que lhe falta)
+  ```
+
+- **Exemplos de Uso:** 
+  -Para rodar a simulação básica, utilize o código:
+  simuladordecolisoes.py e execute o terminal.
+
+- **Informações sobre o projeto:**
+  Este projeto foi desenvolvido por:
+  
+    Matheus Araujo Pinheiro (14676810): matheusaraujopinh@usp.br
+  
+    Bruno Gonçalves (14762111): brunogb728@usp.br
+
+    Luis Henrique Ponciano (15577760): luishenriqueponciano@usp.br
+
+    Gabriel Araujo Lima (14571376): gabriel.araujolima@usp.br
+
+Como parte do processo avaliativo da disciplina 7600105 - Física Básica I (2024) da USP-São Carlos ministrada pela(o) [Prof. Krissia de Zawadzki/Esmerindo de Sousa Bernardes]
+
+## Referencias
+- Utilizou-se o material das notas de aula do professor Esmerindo de Souza Bernardes para curso de Física Básica 1 (2024)
+- Usou-se:
+  ```
+  https://www.pygame.org/docs/
+  ```
+  Para consulta e identificação das funções disponibilizadas pela biblioteca pygame
+- Utilizou-se o site:
+  ```
+  https://docs.python.org/3
+  ```
+  Para consulta de outras funções disponibilizadas nas linguagens e biliotecas que utilizamos de suporte
