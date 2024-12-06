@@ -127,7 +127,6 @@ Sabemos que $p = m \cdot v$, então:
 $$
 \section*{Dedução da Fórmula para $\vec{v}_1'$ com $\vec{n} = \vec{x}_1 - \vec{x}_2$}
 
-\subsection*{1. Conservação do Momento Linear}
 \[
 m_1 \vec{v}_1 + m_2 \vec{v}_2 = m_1 \vec{v}_1' + m_2 \vec{v}_2'.
 \]
@@ -136,7 +135,6 @@ Reorganizando:
 m_1 (\vec{v}_1 - \vec{v}_1') = m_2 (\vec{v}_2' - \vec{v}_2). \tag{1}
 \]
 
-\subsection*{2. Conservação da Energia Cinética}
 \[
 \frac{1}{2} m_1 |\vec{v}_1|^2 + \frac{1}{2} m_2 |\vec{v}_2|^2 = \frac{1}{2} m_1 |\vec{v}_1'|^2 + \frac{1}{2} m_2 |\vec{v}_2'|^2.
 \]
@@ -145,13 +143,11 @@ Cancelando o fator $\frac{1}{2}$:
 m_1 (|\vec{v}_1|^2 - |\vec{v}_1'|^2) = m_2 (|\vec{v}_2'|^2 - |\vec{v}_2|^2). \tag{2}
 \]
 
-\subsection*{3. Vetor Direção da Colisão}
 Definimos $\vec{n} = \vec{x}_1 - \vec{x}_2$ como o vetor de referência. A colisão altera apenas as componentes ao longo de $\vec{n}$. Assim, as velocidades após a colisão são:
 \[
 \vec{v}_1' = \vec{v}_1 + \Delta \vec{v}_1, \quad \vec{v}_2' = \vec{v}_2 + \Delta \vec{v}_2.
 \]
 
-\subsection*{4. Relacionando as Alterações}
 Usando a Eq. (1), temos:
 \[
 m_1 \Delta \vec{v}_1 + m_2 \Delta \vec{v}_2 = 0. \tag{3}
@@ -161,7 +157,6 @@ Logo:
 \Delta \vec{v}_1 = -\frac{m_2}{m_1} \Delta \vec{v}_2. \tag{4}
 \]
 
-\subsection*{5. Velocidades Relativas}
 A velocidade relativa ao longo de $\vec{n}$ inverte após a colisão:
 \[
 (\vec{v}_1' - \vec{v}_2') \cdot \vec{n} = -(\vec{v}_1 - \vec{v}_2) \cdot \vec{n}. \tag{5}
@@ -175,7 +170,6 @@ Reorganizando:
 (\Delta \vec{v}_1 - \Delta \vec{v}_2) \cdot \vec{n} = -2 (\vec{v}_1 - \vec{v}_2) \cdot \vec{n}. \tag{6}
 \]
 
-\subsection*{6. Substituindo $\Delta \vec{v}_2$}
 Usamos a Eq. (4):
 \[
 \Delta \vec{v}_1 \cdot \vec{n} - \left(-\frac{m_1}{m_2} \Delta \vec{v}_1\right) \cdot \vec{n} = -2 (\vec{v}_1 - \vec{v}_2) \cdot \vec{n}.
@@ -189,7 +183,6 @@ Logo:
 \Delta \vec{v}_1 \cdot \vec{n} = -\frac{2m_2}{m_1 + m_2} (\vec{v}_1 - \vec{v}_2) \cdot \vec{n}. \tag{7}
 \]
 
-\subsection*{7. Projeção Vetorial para $\Delta \vec{v}_1$}
 A projeção vetorial ao longo de $\vec{n}$ é:
 \[
 \Delta \vec{v}_1 = -\frac{2m_2}{m_1 + m_2} \frac{\text{proj}_{\vec{n}} (\vec{v}_1 - \vec{v}_2)}{|\vec{n}|^2}.
@@ -200,7 +193,6 @@ Substituímos em $\vec{v}_1'$:
 \vec{v}_1' = \vec{v}_1 + \Delta \vec{v}_1.
 \]
 
-\subsection*{8. Fórmula Final}
 \[
 \vec{v}_1' = \vec{v}_1 - \frac{2m_2}{m_1 + m_2} \frac{(\vec{v}_1 - \vec{v}_2) \cdot \vec{n}}{|\vec{n}|^2} \vec{n}.
 \]
